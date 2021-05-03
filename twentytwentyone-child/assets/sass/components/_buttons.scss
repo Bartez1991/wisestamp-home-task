@@ -1,0 +1,32 @@
+/* ====================
+# COMPONENTS: BUTTONS
+==================== */
+.btn {
+
+  $colors: ('pink': $pink, 'green': $green, 'red': $red, 'yellow': $yellow, 'blue': $blue);
+  padding: .5em 2em;
+  font-size: 1em;
+
+  @each $name, $color in $colors {
+    &.btn-#{$name} {      
+      &:not(:hover):not(:active) {
+        border-color: $color;
+        background-color: $color;
+        color: $primary;
+      }
+    }
+  }
+
+  &-group {
+    display: flex;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+  }
+
+  &-item {
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+  }
+}

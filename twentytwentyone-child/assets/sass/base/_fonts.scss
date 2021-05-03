@@ -1,0 +1,25 @@
+/* ====================
+# BASE: FONTS
+==================== */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+@mixin font-face($font-family, $file-name, $file-path, $weight, $style: normal) {
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+		src: url('#{$file-path}.eot');
+		src: local('#{$file-name}'),
+		url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+		url('#{$file-path}.ttf') format('truetype');
+	}
+}
+$primary-font: 		'Montserrat';
+$primary-fpath: 	'../fonts/Montserrat/';
+
+// Primary Font
+@include font-face($primary-font, $primary-font + '-Regular', $primary-fpath + $primary-font + '-Regular', 400);
+@include font-face($primary-font, $primary-font + '-Black', $primary-fpath + $primary-font + '-Black', 900);

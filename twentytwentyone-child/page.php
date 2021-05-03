@@ -17,5 +17,7 @@ while ( have_posts() ) :
 endwhile; // End of the loop.
 
 do_action("before_page_footer");
+// Get hero block
+get_template_part('partials/block', 'hero');
 
 get_footer();
