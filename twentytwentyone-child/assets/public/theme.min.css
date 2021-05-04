@@ -160,4 +160,8 @@ h2,
 .section-hero .btn-group {
   justify-content: center; }
 
+@media screen and (max-width: 575px) {
+  .section-hero .countdown {
+    font-size: 1.25em; } }
+
 /*# sourceMappingURL=theme.min.css.map */
