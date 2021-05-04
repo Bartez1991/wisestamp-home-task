@@ -7,4 +7,18 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (max-width: 991px) {
+    max-width: 760px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 560px;
+  }
+
+  @media screen and (max-width: 575px) {
+    max-width: 100%;
+  }
 }

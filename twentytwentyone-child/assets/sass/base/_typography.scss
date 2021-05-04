@@ -1,7 +1,7 @@
 /* ====================
 # BASE: TYPOGRAPHY
 ==================== */
-html, 
+html,
 body {
   font-family: $primary-font;
   font-size: 16px;
@@ -9,19 +9,54 @@ body {
   color: $primary;
 }
 
-h1, .h1,
-h2, .h2, 
-h3, .h3,
-h4, .h4,
-h5, .h5,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
 h6 .h6 {
   font-family: $primary-font;
   font-weight: 900;
 }
 
-h1, .h1 {
-  font-size: 3rem;
+h1,
+.h1 {
+  font-size: 4em;
 }
-h2, .h2 {
-  font-size: 2.5rem;
+
+h2,
+.h2 {
+  font-size: 3.5em;
+}
+
+@media screen and (max-width: 991px) {
+  h1, .h1 {
+    font-size: 3.5em;
+  }
+  h2, .h2 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1, .h1 {
+    font-size: 3em;
+  }
+  h2, .h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  h1, .h1 {
+    font-size: 2.5em;
+  }
+  h2, .h2 {
+    font-size: 2em;
+  }
 }
