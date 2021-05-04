@@ -18,6 +18,14 @@
 
 @font-face {
   font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Montserrat/Montserrat-Medium.eot");
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -87,6 +95,7 @@ h2, .h2 {
     color: #292e34; }
   .btn-group {
     display: flex;
+    flex-wrap: wrap;
     margin-left: -0.5em;
     margin-right: -0.5em; }
   .btn-item {
@@ -102,6 +111,17 @@ h2, .h2 {
   position: relative;
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  text-align: center; }
+
+.section-hero .countdown {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center; }
+
+.section-hero .btn-group {
+  justify-content: center; }
 
 /*# sourceMappingURL=theme.min.css.map */

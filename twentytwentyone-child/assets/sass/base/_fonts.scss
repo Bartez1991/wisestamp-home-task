@@ -22,4 +22,5 @@ $primary-fpath: 	'../fonts/Montserrat/';
 
 // Primary Font
 @include font-face($primary-font, $primary-font + '-Regular', $primary-fpath + $primary-font + '-Regular', 400);
-@include font-face($primary-font, $primary-font + '-Black', $primary-fpath + $primary-font + '-Black', 900);
+@include font-face($primary-font, $primary-font + '-Medium',  $primary-fpath + $primary-font + '-Medium',  500);
+@include font-face($primary-font, $primary-font + '-Black',   $primary-fpath + $primary-font + '-Black',   900);

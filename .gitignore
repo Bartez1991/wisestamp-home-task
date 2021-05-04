@@ -1,5 +1,9 @@
 data
 docker-compose.yaml
+# ignore specific themes
 twenty*/
+# except dev theme directory:
 !twentytwentyone-child
 index.php
+# ignore node/grunt dependency directories
+node_modules/
